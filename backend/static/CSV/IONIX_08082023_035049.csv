@@ -1,0 +1,5 @@
+id,shows,theater,genre,ticket_price,ratings,available_tickets,date,time,booked_tickets,tot_earning
+1,Barbie (2023),IONIX,"Fantasy, Romcom, Adventure, Romance",1650,6.0,146,9:00 AM - 10:00 AM,4,6600.0
+3,NCIS,IONIX,"Action, Military, Police procedural, Thriller",1750,8.0,148,10:00 AM - 11:00 AM,2,3500.0
+4,Cars,IONIX,"Animated, Drama, Comedy",1250,0.0,150,11:00 AM - 12:00 PM,0,0.0
+5,3 idiots,IONIX,"Romance, Comedy, Drama",1850,9.0,146,2:00 PM - 3:00 PM,4,7400.0

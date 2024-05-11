@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h4 style="font-size:22px">Hello, {{ username }}</h4>
+    <p>Here is your Monthly Report<p>
+        {% if data|length == 0 %}
+        <p><b>No Bookings by you for the month</b></p><br>
+        {% else %}
+    <table>
+        <thead>
+            <tr>
+                <th>Shows Booked</th>
+                <th>Theater</th>
+                <th>Rating provided</th>
+                <th>Avg. Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for b in data %}
+                <tr>
+                    <td>{{ b.show_seen }}</td>
+                    <td>{{ b.theater_booked }}</td>
+                    <td>{{ b.rating_provided_by_user }}</td>
+                    <td>{{ b.shows_ratings }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    <p>
+        You can book your tickets through our <a href="http://localhost:8080/user/login">website</a>. Hurry, and enjoy an unforgettable show experience!!
+    </p>
+    <p>
+        Thank you for choosing our platform for your entertainment needs. <i>Happy Show Time!!</i>
+    </p>
+    <p>
+        If you have any queries, please write to us at
+        <b>contact@ticketshow.com </b>.
+        We're always here to help you!
+    </p>
+
+    <br>
+    <p>Regards, <br>TickeShow Admin</p>
+</body>
+</html>

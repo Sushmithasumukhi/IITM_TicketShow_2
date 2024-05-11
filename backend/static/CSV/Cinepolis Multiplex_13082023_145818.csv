@@ -1,0 +1,5 @@
+id,shows,theater,genre,ticket_price,ratings,available_tickets,date,time,booked_tickets,tot_earning
+5,Criminal Minds,Cinepolis Multiplex,"Police procedural, Thriller, Crime, Mystery",1500,7.5,139,11:00 AM - 12:00 PM,11,16500.0
+7,Oppenheimer,Cinepolis Multiplex,"Mystery, Drama, History, Thriller",1950,9.0,137,3:00 PM - 4:00 PM,13,25350.0
+8,Chimera,Cinepolis Multiplex,"Crime, Thriller, Mystery, Suspense",1750,8.0,148,5:00 PM - 6:00 PM,2,3500.0
+9,Asur,Cinepolis Multiplex,"Crime, Psychological, Thriller",2400,9.0,146,8:00 PM - 9:00 PM,4,9600.0

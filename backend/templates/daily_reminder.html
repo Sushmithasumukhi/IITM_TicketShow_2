@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Daily Reminder</title>
+
+    <style>
+        body {
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h5 style="font-size:22px">Hello {{ username}},</h5>
+        <p>
+            We hope this message finds you well. 
+            This is a friendly reminder to book your tickets for the latest shows available on our platform. Don't miss out on the fantastic cinematic experiences that await you!
+        </p>
+        <p>You can find the popular shows and lastest shows, you wouldn't want to miss</p>
+        <h4>Here are the popular shows for this season!!</h5>
+        <ul>
+            {% for s, avg_rating in popular_shows %}
+            <li>
+                {{ s.show_name }} - {{ avg_rating }}
+            </li>
+            {% endfor %}
+        </ul>
+        
+        <h4>And here are the lastest Shows on our platform you wouldn't want to miss</h5>
+        <ul>
+            {% for s in latest_shows %}
+            <li>
+                {{ s.show_name }} 
+            </li>
+            {% endfor %}
+        </ul>
+        <br />
+        <p>
+            Book your tickets and secure you seats!!
+        </p>
+        <p>
+            You can book your tickets through our <a href="http://localhost:8080/user/login">website</a>. Hurry, and enjoy an unforgettable show experience!
+        </p>
+        <p>
+            Thank you for choosing our platform for your entertainment needs. <i>Happy Show Time!!</i>
+        </p>
+        <p>
+            If you have any queries, please write to us at
+            <b>contact@ticketshow.com </b>.
+            We're always here to help you!
+        </p>
+
+        <br>
+        <p>Regards, <br>TickeShow Admin</p>
+    </div>
+</body>
+
+
+</html>

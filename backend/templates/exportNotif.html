@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>export csv</title>
+    <style>
+        body {
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h5 style="font-size:22px">Greetings,</h5>
+    <p>Hope you are doing fine,
+        Here is your requested csv file for <b>{{theater_name}}</b>
+    </p>
+    <a href="http://127.0.0.1:5000/{{ csv_path }}">{{ file_name }}</a>
+    <p>
+        Thank you for choosing our platform <i>Happy Show Time!!</i>
+    </p>
+    <p>
+        If you have any queries, please write to us at
+        <b>contact@ticketshow.com </b>.
+        We're always here to help you!
+    </p>
+
+    </body>
+</html>
