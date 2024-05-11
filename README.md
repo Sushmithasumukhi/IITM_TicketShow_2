@@ -86,9 +86,12 @@ The features of the application are as follows:
 
 -   **Monthly entertainment report**: Receive a report as an email summarizing bookings for the month
 
+## Set-Up
+1. ` pip install -r requirements.txt ` -  command for installing the required packages for backend
+2. Ubuntu is required for running redis-server and celery.
+3. install the requirment.txt packages in the ubuntu as well
 
 ## Instructions for running the application
-
 
 1. Navigate to the root folder of the application.
 2. Open two separate terminals and execute the following commands in each:
